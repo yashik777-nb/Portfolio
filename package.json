@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w --recursive --output-style compressed -o dist/css scss/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashik777-nb/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "Yaswanth Iddibani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashik777-nb/Portfolio/issues"
+  },
+  "homepage": "https://github.com/yashik777-nb/Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
