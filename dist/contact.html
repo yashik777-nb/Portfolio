@@ -37,7 +37,7 @@
         <h2 class="section-title">Contact Me</h2>
         <div class="bottom-line"></div>
         <p class="lead">Here is where you reach me</p>
-        <form>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
           <div class="text-fields">
             <input
               type="text"
@@ -51,7 +51,7 @@
               name="subject"
               class="text-input subject-input"
               placeholder="Subject"
-              id="subjct"
+              id="subject"
             />
             <input
               type="email"
@@ -62,10 +62,10 @@
             />
             <input
               type="number"
-              name="phoneNumber"
+              name="phone"
               class="text-input phone-input"
               placeholder="Phone Number"
-              id="phoneNumber"
+              id="phone"
             />
             <textarea
               name="message"
@@ -73,6 +73,9 @@
               placeholder="Enter Your Message"
               id="message"
             ></textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
           </div>
           <button type="submit" class="btn-dark">Submit</button>
         </form>
