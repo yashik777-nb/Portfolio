@@ -1,7 +1,7 @@
 // Ipad Pro
-@media (max-width: 1025) {
+@media (max-width: 1025px) {
   #header-home {
-    height: 40rem;
+    background: $bg-image no-repeat 50% 50% / cover;
   }
 }
 
