@@ -1,5 +1,168 @@
+// Ipad Pro
+@media (max-width: 1025) {
+  #header-home {
+    height: 40rem;
+  }
+}
+
 // Tablet
 @media (max-width: 800px) {
   #header-home {
+    height: 30rem;
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
+}
+
+// Smart Phone
+@media (max-width: 500px) {
+  .py-3 {
+    padding: 0.75rem 0rem;
+  }
+  .py-4 {
+    padding: 1rem 0rem;
+  }
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 11rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+      .header-content {
+        display: none;
+      }
+    }
+    &-inner {
+      height: 11rem;
+    }
+  }
+  // Stack grid Columns
+
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+  }
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 2px solid $light-color;
+        padding: 1rem 0;
+
+        &:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+    &-b {
+      .stats div {
+        padding: 1rem 0;
+      }
+    }
+  }
+  // About Page
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bio-image"
+          "bio"
+          "aw1"
+          "aw2"
+          "aw3";
+      }
+    }
+    &-c {
+      display: none;
+    }
+    &-d {
+      .testimonials ul li img {
+        margin-right: 1rem;
+      }
+    }
+  }
+  // Contact Page
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+
+        input,
+        textarea {
+          border: 2px solid $light-color;
+        }
+      }
+    }
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $light-color;
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+  #main-footer {
+    height: 6rem;
+    .footer-content {
+      flex-direction: column;
+      height: 5rem;
+      padding: 1rem;
+      p {
+        padding-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+// Smart Phone < 365px
+@media (max-width: 365px) {
+  #main-nav li {
+    padding: 0.55rem;
+  }
+}
+
+// Landscape
+@media (max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
+    }
+  }
+}
+@media (max-height: 320px) {
+  #header-home {
+    .header-content {
+      padding-top: 1rem;
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
   }
 }
